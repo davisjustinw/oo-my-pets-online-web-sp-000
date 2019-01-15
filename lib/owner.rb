@@ -59,10 +59,6 @@ class Owner
     end
   end
   
-  def count(species)
-    @pets[species].count
-  end
-  
   def list_pets
     "I have #{count(:fishes)} fish, #{count(:dogs)} dog(s), and #{count(:cats)} cat(s)."
   end
@@ -70,6 +66,10 @@ class Owner
   private
   def change_pets_moods(pet_species, mood)
     @pets[pet_species].each { |pet| pet.mood =  mood }
+  end
+  
+  def count(species)
+    @pets[species].count
   end
   
     
