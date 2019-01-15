@@ -2,7 +2,8 @@ class Owner
   attr_accessor :name
   
   def initialize
-    @pets = 
+    @pets = {fishes: [], cats: [], dogs: []}
+  end
   
   def self.count_all
     @@all.count
