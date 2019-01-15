@@ -40,11 +40,16 @@ class Owner
   end
   
   def walk_dogs
-    @pets[:dogs].each { |dog| dog.mood = "happy" }
+    make_pets_happy(':dogs')
   end
   
   def play_with_cats
     @pets[:cats].each { |cat| cat.mood = "happy" }
+  end
+    
+  private
+  def make_pets_happy(pet_species)
+    @pets[pet_species].each { |pet| pet.mood = "happy" }
   end
     
 end
