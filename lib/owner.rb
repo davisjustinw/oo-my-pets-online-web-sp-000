@@ -19,6 +19,9 @@ class Owner
     @@all.count
   end
   
+  def say_species
+    
+  
   def buy_cat(name)
     @pets[:cats] << Cat.new(name)
   end
