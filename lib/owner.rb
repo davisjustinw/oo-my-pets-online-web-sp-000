@@ -56,6 +56,7 @@ class Owner
     pets.each do |species|
       binding.pry
     end
+  end
   
   private
   def change_pets_moods(pet_species, mood)
