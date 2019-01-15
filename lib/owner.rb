@@ -53,7 +53,7 @@ class Owner
   
   private
   def make_pets_happy(pet_species)
-    @pets[pet_species].each { |pet| pet.mood = "happy" }
+    @pets[pet_species].each { |pet| pet.mood =  "happy" }
   end
     
 end
