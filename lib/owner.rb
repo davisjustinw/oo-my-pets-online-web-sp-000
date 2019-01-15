@@ -1,3 +1,4 @@
+require 'pry'
 class Owner
   attr_accessor :pets, :name
   attr_reader :species
@@ -50,6 +51,9 @@ class Owner
   def feed_fish
     change_pets_moods(:fishes, "happy")
   end
+  
+  def sell_pets
+    pets.each 
   
   private
   def change_pets_moods(pet_species, mood)
