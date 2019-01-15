@@ -59,6 +59,10 @@ class Owner
     end
   end
   
+  def list_pets
+    
+  end
+  
   private
   def change_pets_moods(pet_species, mood)
     @pets[pet_species].each { |pet| pet.mood =  mood }
