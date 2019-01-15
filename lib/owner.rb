@@ -48,7 +48,7 @@ class Owner
   end
     
   def feed_fish
-    make_pets_happy(:fish)
+    make_pets_happy(:fishes)
   end
   
   private
