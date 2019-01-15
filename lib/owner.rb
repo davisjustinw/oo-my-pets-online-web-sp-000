@@ -40,7 +40,7 @@ class Owner
   end
   
   def walk_dogs
-    make_pets_happy(':dogs')
+    make_pets_happy(:dogs)
   end
   
   def play_with_cats
