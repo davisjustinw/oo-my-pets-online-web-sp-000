@@ -44,11 +44,11 @@ class Owner
   end
   
   def play_with_cats
-    make_pets_happy(:cats)
+    change_pets_moods(:cats, "happy")
   end
     
   def feed_fish
-    make_pets_happy(:fishes)
+    change_pets_moods(:fishes, "happy")
   end
   
   private
