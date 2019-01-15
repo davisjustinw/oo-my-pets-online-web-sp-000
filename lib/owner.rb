@@ -53,7 +53,9 @@ class Owner
   end
   
   def sell_pets
-    pets.each 
+    pets.each do |species|
+      
+    end
   
   private
   def change_pets_moods(pet_species, mood)
