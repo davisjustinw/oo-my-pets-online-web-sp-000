@@ -53,7 +53,10 @@ class Owner
   end
   
   def sell_pets
-    @pets.keys.each { |species| change_pets_moods(species, "nervous") }
+    @pets.keys.each do |species| 
+      change_pets_moods(species, "nervous")
+      binding.pry
+    end
   end
   
   private
